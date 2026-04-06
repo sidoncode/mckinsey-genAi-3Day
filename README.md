@@ -56,8 +56,6 @@ All examples use **McKinsey consulting scenarios**: client engagement planning, 
 
 ---
 
----
-
 ## Getting Started
 
 ### Prerequisites
