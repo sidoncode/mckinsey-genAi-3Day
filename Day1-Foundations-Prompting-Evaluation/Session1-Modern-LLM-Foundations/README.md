@@ -11,33 +11,48 @@ This session introduces the foundational concepts of Large Language Models (LLMs
 - LLM architecture overview (Transformer, attention mechanisms)
 - Tokenization and context window management with consulting text
 - Model parameters: temperature, top_p, frequency_penalty, max_tokens
-- API setup and configuration (OpenAI)
-- Building a basic LLM pipeline for consulting use cases
-- Embeddings and vector representations for consulting documents
-- Embedding visualization with PCA and t-SNE
-- How LLMs support reasoning and agent behavior (MECE decomposition, tool selection)
+- API setup and configuration (OpenAI) with environment variables
+- Building LLM pipelines for consulting use cases
+- Embeddings and vector representations for semantic search
+- API cost estimation and engagement budgeting
+- Context-aware routing agents with practice-specific personas
 
 ## Notebooks
 
 | Notebook | Description |
 |---|---|
-| `student/Session1_Student_LLM_Foundations.ipynb` | 8 guided demos + 4 TODO exercises with hints |
-| `instructor/Session1_Instructor_LLM_Foundations.ipynb` | 8 fully solved demos + 4 exercises with explanations |
+| `student/Session1_Student_LLM_Foundations.ipynb` | 5 guided demos + 8 TODO exercises with hints |
+| `instructor/Session1_Instructor_LLM_Foundations.ipynb` | 5 demos + 8 exercises with full solutions and approach explanations |
 
-## Demos (8)
+## Demos (5)
 
 1. **Demo 1:** Setting up LLM API connections — McKinsey digital transformation query
-2. **Demo 2:** Understanding tokenization — consulting terminology and market sizing code
-3. **Demo 3:** Exploring model parameters — executive summary generation for consulting
+2. **Demo 2:** Understanding tokenization — consulting terminology and context window analysis
+3. **Demo 3:** Exploring model parameters — temperature, top_p, max_tokens comparison
 4. **Demo 4:** Role-based personas — McKinsey Partner, Associate, and Expert analyzing retail decline
 5. **Demo 5:** Building a basic LLM pipeline — research summarization for client decks
-6. **Demo 6:** Embeddings and vector representations — consulting domain similarity analysis
-7. **Demo 7:** Embedding visualization — PCA, t-SNE, and similarity heatmaps of consulting concepts
-8. **Demo 8:** LLM reasoning for agents — MECE decomposition, engagement planning, tool selection
 
-## Exercises (4)
+## Exercises (8)
 
-1. **Task 1:** Test API connection with McKinsey MECE problem-solving prompt
-2. **Task 2:** Optimize token usage on a healthcare market research brief
-3. **Task 3:** Compare temperature settings on competitive advantage analysis
-4. **Task 4:** Build a SimpleAgent as a McKinsey engagement manager
+| Task | Topic | Difficulty |
+|---|---|---|
+| Task 1 | Test API connection with McKinsey MECE problem-solving prompt | Beginner |
+| Task 2 | Optimize token usage on a healthcare market research brief | Intermediate |
+| Task 3 | Compare temperature settings on competitive advantage analysis | Intermediate |
+| Task 4 | Build a SimpleAgent as a McKinsey engagement manager | Intermediate |
+| Task 5 | Generate and compare embeddings for semantic search | Intermediate |
+| Task 6 | Build a multi-step analysis pipeline with quality review | Advanced |
+| Task 7 | Estimate API costs from token usage for engagement budgeting | Intermediate |
+| Task 8 | Build a context-aware routing agent with practice-specific personas | Advanced |
+
+## Environment Variables
+
+All notebooks load configuration from the project root `.env` file via `python-dotenv`. Key variables used in this session:
+
+| Variable | Default | Purpose |
+|---|---|---|
+| `OPENAI_API_KEY` | *(required)* | OpenAI API authentication |
+| `OPENAI_MODEL_NAME` | `gpt-4o-mini` | Chat model used across demos and tasks |
+| `OPENAI_EMBEDDING_MODEL` | `text-embedding-3-small` | Embedding model for Task 5 |
+| `DEFAULT_TEMPERATURE` | `0` | Default LLM temperature |
+| `DEFAULT_MAX_TOKENS` | `300` | Default max response tokens |
