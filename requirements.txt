@@ -1,0 +1,15 @@
+openai
+langchain
+langchain-core
+langchain-openai
+langgraph
+chromadb
+deepeval
+tiktoken
+pandas
+numpy
+matplotlib
+scikit-learn
+pydantic
+python-dotenv
+tavily-py

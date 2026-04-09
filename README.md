@@ -10,7 +10,7 @@ The curriculum takes participants from LLM fundamentals through LangChain/LangGr
 
 | Day | Theme | Sessions | Notebooks |
 |-----|-------|----------|-----------|
-| **Day 1** | Foundations, Prompting & Evaluation | 4 sessions (Modules 1-3 + Lab Review) | 5 notebooks |
+| **Day 1** | Foundations, Prompting & Evaluation | 4 sessions (Modules 1-3 + Lab Review) | 5 notebooks (8 tasks in Session 1) |
 | **Day 2** | LangChain, LangGraph & Multi-Agent | 4 sessions (Modules 4-7) | 8 notebooks |
 | **Day 3** | RAG, Deployment, Capstone & Governance | 4 sessions (Modules 9-11) + 2 capstone tracks | 10 notebooks |
 
@@ -31,7 +31,7 @@ All examples use **McKinsey consulting scenarios**: client engagement planning, 
 
 | Time | Session | Topic |
 |------|---------|-------|
-| 9:00 – 10:45 | Session 1 | **Module 1:** Modern LLM Foundations — architecture, tokenization, API parameters, embeddings, reasoning |
+| 9:00 – 10:45 | Session 1 | **Module 1:** Modern LLM Foundations — architecture, tokenization, API parameters, embeddings, pipelines, cost estimation, routing agents |
 | 11:00 – 12:45 | Session 2 | **Module 2:** Prompt Engineering — few-shot, chain-of-thought, ReAct, LangChain templates |
 | 1:30 – 3:15 | Session 3 | **Module 3:** Model Evaluation — metrics, LLM-as-Judge, benchmarking, sklearn metrics, DeepEval |
 | 3:30 – 5:00 | Session 4 | **Lab Review & Integration** — facilitated review combining all Day 1 concepts |
@@ -89,44 +89,43 @@ venv\Scripts\activate
 
 ### 3. Install dependencies
 
-Install all packages needed across all 3 days in one command:
+Install all packages using the provided `requirements.txt`:
 
 ```bash
-pip install openai tiktoken pydantic langchain langchain-openai langchain-community langgraph langsmith chromadb faiss-cpu pandas matplotlib numpy scikit-learn deepeval
+pip install -r requirements.txt
 ```
 
-Or install per day:
+This installs: `openai`, `langchain`, `langchain-core`, `langchain-openai`, `langgraph`, `chromadb`, `deepeval`, `tiktoken`, `pandas`, `numpy`, `matplotlib`, `scikit-learn`, `pydantic`, `python-dotenv`, and `tavily-py`.
 
-```bash
-# Day 1 only
-pip install openai tiktoken pandas matplotlib numpy scikit-learn deepeval langchain langchain-openai
+### 4. Configure environment variables
 
-# Day 2 (adds LangChain + LangGraph)
-pip install openai tiktoken pydantic langchain langchain-openai langchain-community langgraph langsmith pandas matplotlib numpy
+Copy the provided `.env` file at the repo root and fill in your API keys:
 
-# Day 3 (adds vector stores)
-pip install openai tiktoken pydantic langchain langchain-openai langchain-community langgraph chromadb faiss-cpu pandas matplotlib numpy
+```env
+# API Keys
+OPENAI_API_KEY=your_openai_api_key_here
+TAVILY_API_KEY=your_tavily_api_key_here          # Optional — for web search tools
+LANGCHAIN_API_KEY=your_langchain_api_key_here      # Optional — for LangSmith tracing
+
+# LangSmith Tracing (optional)
+LANGCHAIN_TRACING_V2=false
+LANGCHAIN_PROJECT=mckinsey-genai-3day
+
+# Model Configuration
+OPENAI_MODEL_NAME=gpt-4o-mini
+OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+
+# Model Parameters
+DEFAULT_TEMPERATURE=0
+DEFAULT_MAX_TOKENS=300
+
+# RAG Configuration
+CHUNK_SIZE=300
+CHUNK_OVERLAP=50
+CHROMA_PERSIST_DIRECTORY=./chroma_db
 ```
 
-### 4. Set your OpenAI API key
-
-**macOS / Linux:**
-
-```bash
-export OPENAI_API_KEY="sk-your-key-here"
-```
-
-**Windows (PowerShell):**
-
-```powershell
-$env:OPENAI_API_KEY="sk-your-key-here"
-```
-
-Or create a `.env` file at the repo root:
-
-```
-OPENAI_API_KEY=sk-your-key-here
-```
+All notebooks use `python-dotenv` to load these variables automatically. Every value has a sensible fallback default, so **only `OPENAI_API_KEY` is required** — the rest are optional overrides.
 
 ### 5. Launch Jupyter and start a session
 
@@ -187,6 +186,8 @@ Navigate to the appropriate Day and Session folder, then open the **student/** o
 | **ChromaDB** | In-memory vector database for embedding storage and similarity search | Day 3 |
 | **FAISS** | High-performance vector similarity search (alternative to ChromaDB) | Day 3 |
 | **DeepEval** | LLM evaluation framework with G-Eval and relevancy metrics | Day 1 |
+| **Tavily** | Search API for LLM agents — web research and tool integration | Day 2-3 |
+| **python-dotenv** | Environment variable management from `.env` files | All 3 days |
 
 ### Data & Validation
 
@@ -204,8 +205,11 @@ Navigate to the appropriate Day and Session folder, then open the **student/** o
 | Pattern | Description | Session |
 |---------|-------------|---------|
 | **Prompt Engineering** | Few-shot, chain-of-thought, ReAct — applied to McKinsey consulting analysis | Day 1, Session 2 |
-| **Embeddings & Vectors** | Consulting document embeddings, similarity, PCA/t-SNE visualization | Day 1, Session 1 |
+| **Embeddings & Vectors** | Consulting document embeddings, cosine similarity, semantic search | Day 1, Session 1 |
 | **LLM Reasoning** | MECE decomposition, engagement planning, tool selection for consulting workflows | Day 1, Session 1 |
+| **API Cost Estimation** | Token counting, per-token pricing, engagement cost budgeting | Day 1, Session 1 |
+| **Context-Aware Routing** | Classify-then-route pattern — routing to practice-specific agent personas | Day 1, Session 1 |
+| **Self-Reflection Pipeline** | Multi-step analysis with LLM quality review of its own output | Day 1, Session 1 |
 | **Structured Outputs** | JSON mode, function calling, Pydantic — extracting client profiles and engagement data | Day 1-2 |
 | **LCEL Chains** | Composable prompt → model → parser pipelines for consulting analysis | Day 2, Session 2 |
 | **Tool Use** | Custom consulting tools (market research, financial modeling, benchmarking) | Day 2, Session 2 |
@@ -239,7 +243,7 @@ All exercises throughout the program use realistic McKinsey consulting scenarios
 By completing this program, participants will be able to:
 
 **Day 1 — Foundations**
-1. Explain modern LLM architectures, embeddings, and reasoning capabilities for agentic consulting systems
+1. Explain modern LLM architectures, embeddings, cost estimation, and reasoning capabilities for agentic consulting systems
 2. Apply prompt engineering techniques (few-shot, CoT, ReAct) to McKinsey consulting analysis and deliverables
 3. Evaluate and compare LLM models using structured metrics, sklearn classification metrics, and DeepEval
 
@@ -262,7 +266,7 @@ By completing this program, participants will be able to:
 | Issue | Solution |
 |-------|----------|
 | `ModuleNotFoundError: No module named 'openai'` | Run `pip install openai` inside your activated virtual environment |
-| `AuthenticationError` from OpenAI | Verify `OPENAI_API_KEY` is set: `echo $OPENAI_API_KEY` (macOS/Linux) or `echo %OPENAI_API_KEY%` (Windows) |
+| `AuthenticationError` from OpenAI | Verify `OPENAI_API_KEY` is set in your `.env` file or run `echo $OPENAI_API_KEY` (macOS/Linux) |
 | `RateLimitError` from OpenAI | You have hit your API rate limit. Wait 60 seconds and retry, or check your OpenAI usage dashboard |
 | ChromaDB import errors | Run `pip install chromadb` — requires Python 3.9+ |
 | LangGraph import errors | Run `pip install langgraph` — requires `langchain-core >= 0.2` |
