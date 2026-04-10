@@ -20,7 +20,7 @@
 
 ### What's Inside
 
-- **Guided capstone project** — build a McKinsey Knowledge Assistant with 4 milestones
+- **Guided capstone project** — build a McKinsey Knowledge Assistant with 6 milestones
 - Each milestone builds on the previous one
 - TODO placeholders with detailed hints at each step
 
@@ -32,6 +32,8 @@
 | Milestone 2 | Embedding, indexing & hybrid retrieval over McKinsey knowledge base | ~25 min |
 | Milestone 3 | MECE-structured answer generation with source citations | ~25 min |
 | Milestone 4 | Consulting-specific evaluation (strategic relevance, faithfulness, executive readiness) | ~25 min |
+| Milestone 5 | Multi-turn conversational knowledge assistant with follow-up rewriting | ~15 min |
+| Milestone 6 | A/B testing and configuration comparison | ~15 min |
 
 ### Tips
 

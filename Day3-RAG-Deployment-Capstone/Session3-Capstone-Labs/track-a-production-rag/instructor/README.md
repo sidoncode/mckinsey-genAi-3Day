@@ -15,6 +15,8 @@
 | Milestone 2 | 25 min | Embedding & hybrid retrieval over McKinsey knowledge base |
 | Milestone 3 | 25 min | MECE-structured answers with source citations |
 | Milestone 4 | 25 min | Consulting-specific evaluation pipeline |
+| Milestone 5 | 15 min | Multi-turn conversational knowledge assistant |
+| Milestone 6 | 15 min | A/B testing and configuration comparison |
 | Wrap-up | 5 min | Prepare for Session 4 cross-track presentations |
 
 ### What's Inside

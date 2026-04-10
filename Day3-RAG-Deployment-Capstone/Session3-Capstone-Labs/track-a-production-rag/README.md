@@ -22,9 +22,11 @@ Build a **McKinsey Knowledge Assistant** that:
 | `student/Session3_Student_Track_A_Production_RAG.ipynb` | Guided capstone with TODO milestones |
 | `instructor/Session3_Instructor_Track_A_Production_RAG.ipynb` | Fully solved capstone with explanations |
 
-## Milestones (4)
+## Milestones (6)
 
 1. **Milestone 1:** Consulting document ingestion and intelligent chunking pipeline with practice area detection
 2. **Milestone 2:** Embedding, indexing, and hybrid retrieval over McKinsey knowledge base
 3. **Milestone 3:** MECE-structured answer generation with source citations
 4. **Milestone 4:** Consulting-specific evaluation pipeline (strategic relevance, faithfulness, executive readiness)
+5. **Milestone 5:** Multi-turn conversational knowledge assistant with follow-up question rewriting
+6. **Milestone 6:** A/B testing and configuration comparison to optimize RAG pipeline settings

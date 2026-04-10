@@ -18,12 +18,14 @@
 | Demo 5 | 5 min | GovernedAgent — full governance stack |
 | Task 1-2 | 12 min | PolicyGuardrail & BiasDetector |
 | Task 3-4 | 12 min | GovernanceScorecard & DeploymentReadiness |
+| Task 5 | 10 min | PII Detection and Redaction Pipeline |
+| Task 6 | 10 min | Incident Response and Escalation System |
 | Closing Reflection | 9 min | Retrospective, resources, next steps |
 
 ### What's Inside
 
 - **5 Demos** — Fully executed with detailed commentary on McKinsey consulting AI governance
-- **4 Solved Tasks** — Complete solutions with explanations
+- **6 Solved Tasks** — Complete solutions with explanations
 - **Facilitation guide** for cross-track capstone presentations
 
 ### Key Teaching Points

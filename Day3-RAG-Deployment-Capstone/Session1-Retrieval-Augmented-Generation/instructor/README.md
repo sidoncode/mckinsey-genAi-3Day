@@ -20,12 +20,16 @@
 | Task 2 | 10 min | SmartChunker (strategy reports vs. analytics code) |
 | Task 3 | 10 min | AdvancedRetriever with query expansion & reranking |
 | Task 4 | 15 min | EvaluatedRAG with consulting quality metrics |
+| Task 5 | 10 min | MetadataFilteredRetriever for practice area search |
+| Task 6 | 10 min | ConversationalRAG with follow-up handling |
+| Optional Task 7 | 10 min | Hybrid Search (keyword + semantic with RRF) |
+| Optional Task 8 | 10 min | Hallucination detection and source grounding |
 | Wrap-up | 6 min | Q&A and key takeaways |
 
 ### What's Inside
 
 - **5 Demos** — Fully executed with detailed commentary and McKinsey consulting talking points
-- **4 Solved Tasks** — Complete solutions with step-by-step explanations
+- **6 Solved Tasks + 2 Optional Bonus** — Complete solutions with step-by-step explanations
 
 ### Key Teaching Points
 

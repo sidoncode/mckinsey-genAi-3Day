@@ -20,7 +20,7 @@
 
 ### What's Inside
 
-- **Guided capstone project** — build a McKinsey Engagement Team simulation with 4 milestones
+- **Guided capstone project** — build a McKinsey Engagement Team simulation with 6 milestones
 - Each milestone builds on the previous one
 - TODO placeholders with detailed hints at each step
 
@@ -32,6 +32,8 @@
 | Milestone 2 | Specialist consulting agents (Strategy, Financial, Operations, Industry) | ~25 min |
 | Milestone 3 | LangGraph engagement orchestration | ~25 min |
 | Milestone 4 | Partner Review quality loop for deliverable refinement | ~25 min |
+| Milestone 5 | Cross-agent memory and context sharing | ~15 min |
+| Milestone 6 | Engagement analytics and reporting dashboard | ~15 min |
 
 ### Tips
 

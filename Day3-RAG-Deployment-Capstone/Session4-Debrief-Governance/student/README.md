@@ -13,7 +13,7 @@
 ### What's Inside
 
 - **5 Demos** — Governance and safety patterns for McKinsey consulting AI applications
-- **4 Hands-On Tasks** — Apply governance concepts to ensure your consulting AI meets McKinsey standards
+- **6 Hands-On Tasks** — Apply governance concepts to ensure your consulting AI meets McKinsey standards
 - **Presentation slot** — Share your capstone (Knowledge Assistant or Engagement Team) with the other track
 
 ### Task Summary
@@ -24,6 +24,8 @@
 | Task 2 | Build a BiasDetector for industry and geographic bias | Intermediate |
 | Task 3 | Create a GovernanceScorecard with 8 McKinsey governance criteria | Intermediate |
 | Task 4 | Write a DeploymentReadiness assessment (technical / governance / operational) | Advanced |
+| Task 5 | PII Detection and Redaction Pipeline (regex + LLM-based) | Intermediate |
+| Task 6 | Incident Response and Escalation System | Intermediate |
 
 ### Tips
 

@@ -15,6 +15,8 @@
 | Milestone 2 | 25 min | Specialist consulting agents (Strategy, Financial, Operations, Industry) |
 | Milestone 3 | 25 min | LangGraph engagement orchestration |
 | Milestone 4 | 25 min | Partner Review quality loop |
+| Milestone 5 | 15 min | Cross-agent memory and context sharing |
+| Milestone 6 | 15 min | Engagement analytics and reporting dashboard |
 | Wrap-up | 5 min | Prepare for Session 4 cross-track presentations |
 
 ### What's Inside

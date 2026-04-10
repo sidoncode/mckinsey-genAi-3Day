@@ -31,9 +31,11 @@ This closing session brings both capstone tracks together. Participants share wh
 4. **Demo 4:** GovernanceEvaluator — 8-item McKinsey governance checklist (G1–G8)
 5. **Demo 5:** GovernedAgent — combining guardrails, filtering, and logging into a governed consulting agent
 
-## Exercises (4)
+## Exercises (6)
 
 1. **Task 1:** Implement a PolicyGuardrail with configurable severity (block / warn / allow)
 2. **Task 2:** Build a BiasDetector for industry and geographic bias in consulting recommendations
 3. **Task 3:** Create a GovernanceScorecard with 8 McKinsey governance criteria
 4. **Task 4:** Write a DeploymentReadiness assessment (technical / governance / operational)
+5. **Task 5:** PII Detection and Redaction Pipeline — regex + LLM-based PII detection with auto-redaction
+6. **Task 6:** Incident Response and Escalation System — severity classification, escalation rules, incident reporting

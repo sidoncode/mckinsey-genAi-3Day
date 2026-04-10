@@ -18,8 +18,8 @@ This session takes RAG from the simple keyword-matching demo in Day 2 to a produ
 
 | Notebook | Description |
 |---|---|
-| `student/Session1_Student_RAG.ipynb` | Guided demos + TODO exercises with hints |
-| `instructor/Session1_Instructor_RAG.ipynb` | Fully solved demos + exercises with explanations |
+| `student/Session1_Student_RAG.ipynb` | 5 guided demos + 6 TODO exercises + 2 optional bonus tasks |
+| `instructor/Session1_Instructor_RAG.ipynb` | 5 fully solved demos + 8 exercises with explanations |
 
 ## Demos (5)
 
@@ -29,9 +29,16 @@ This session takes RAG from the simple keyword-matching demo in Day 2 to a produ
 4. **Demo 4:** Multi-query expansion and HyDE for consulting research questions
 5. **Demo 5:** End-to-end RAG with source citations from engagement playbooks
 
-## Exercises (4)
+## Exercises (6 + 2 Optional)
 
 1. **Task 1:** Build a SearchEngine class over a consulting knowledge corpus
 2. **Task 2:** Implement a SmartChunker that detects strategy reports, analytics code, and engagement notes
 3. **Task 3:** Create an AdvancedRetriever with query expansion and reranking
 4. **Task 4:** Build an EvaluatedRAG system with relevance, faithfulness, and completeness metrics
+5. **Task 5:** Build a MetadataFilteredRetriever for practice area and industry-filtered search
+6. **Task 6:** Create a ConversationalRAG with follow-up question rewriting and multi-turn memory
+
+### Optional / Bonus
+
+7. **Task 7 (Optional):** Hybrid Search — combining keyword (BM25-style) and semantic retrieval with Reciprocal Rank Fusion
+8. **Task 8 (Optional):** RAG with hallucination detection — verify every claim is grounded in retrieved sources

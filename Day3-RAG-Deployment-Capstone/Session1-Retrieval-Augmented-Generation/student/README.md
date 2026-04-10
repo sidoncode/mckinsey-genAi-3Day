@@ -21,7 +21,7 @@
 ### What's Inside
 
 - **5 Demos** — Follow along with the instructor. Run each cell to see how RAG retrieves and reasons over McKinsey consulting knowledge.
-- **4 Hands-On Tasks** — Complete the TODO sections to build consulting knowledge retrieval systems. Each task includes hints.
+- **6 Hands-On Tasks + 2 Optional Bonus** — Complete the TODO sections to build consulting knowledge retrieval systems. Each task includes hints.
 
 ### Task Summary
 
@@ -31,6 +31,10 @@
 | Task 2 | Implement a SmartChunker (strategy reports vs. analytics code vs. engagement notes) | Intermediate |
 | Task 3 | Create an AdvancedRetriever with query expansion and reranking | Intermediate |
 | Task 4 | Build an EvaluatedRAG system with relevance, faithfulness, and completeness metrics | Advanced |
+| Task 5 | Build a MetadataFilteredRetriever for practice area and industry-filtered search | Intermediate |
+| Task 6 | Create a ConversationalRAG with follow-up question handling | Intermediate |
+| Task 7 (Optional) | Hybrid Search — keyword + semantic with Reciprocal Rank Fusion | Advanced |
+| Task 8 (Optional) | RAG with hallucination detection and source grounding | Advanced |
 
 ### Tips
 

@@ -22,9 +22,11 @@ Build a **McKinsey Engagement Team** with:
 | `student/Session3_Student_Track_B_Multi_Agent.ipynb` | Guided capstone with TODO milestones |
 | `instructor/Session3_Instructor_Track_B_Multi_Agent.ipynb` | Fully solved capstone with explanations |
 
-## Milestones (4)
+## Milestones (6)
 
 1. **Milestone 1:** EngagementManagerAgent supervisor with workstream decomposition
 2. **Milestone 2:** Specialized consulting agents — Strategy, Financial, Operations, Industry
 3. **Milestone 3:** LangGraph engagement orchestration and workflow coordination
 4. **Milestone 4:** Partner Review quality loop for deliverable refinement
+5. **Milestone 5:** Cross-agent memory and context sharing (shared knowledge store)
+6. **Milestone 6:** Engagement analytics and reporting dashboard
