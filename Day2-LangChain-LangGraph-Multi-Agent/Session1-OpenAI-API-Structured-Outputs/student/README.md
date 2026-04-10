@@ -21,7 +21,7 @@
 ### What's Inside
 
 - **5 Demos** — Follow along with the instructor. Run each cell and observe how structured outputs are used for McKinsey consulting data extraction.
-- **4 Hands-On Tasks** — Complete the TODO sections to build consulting AI tools. Each task includes hints to guide you.
+- **8 Hands-On Tasks** — Complete the TODO sections to build consulting AI tools. Each task includes hints to guide you.
 
 ### Task Summary
 
@@ -31,6 +31,10 @@
 | Task 2 | Implement a financial analysis tool with function calling | Intermediate |
 | Task 3 | Create a multi-tool consulting agent (market research + financial analysis + benchmarking) | Intermediate |
 | Task 4 | Build a RobustConsultingClient with retries, validation, and streaming | Advanced |
+| Task 5 | Parallel function calling for cross-practice research | Intermediate |
+| Task 6 | Nested Pydantic models for M&A deal memo generation | Intermediate |
+| Task 7 | Multi-turn tool agent with conversation memory | Advanced |
+| Task 8 | Batch processing pipeline with structured validation | Advanced |
 
 ### Tips
 

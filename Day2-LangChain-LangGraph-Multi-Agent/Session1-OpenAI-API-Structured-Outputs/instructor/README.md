@@ -20,12 +20,16 @@
 | Task 2 | 10 min | Financial analysis tool |
 | Task 3 | 10 min | Multi-tool consulting agent |
 | Task 4 | 15 min | RobustConsultingClient |
+| Task 5 | 10 min | Parallel function calling |
+| Task 6 | 12 min | Nested Pydantic deal memo |
+| Task 7 | 12 min | Multi-turn tool agent with memory |
+| Task 8 | 10 min | Batch processing pipeline |
 | Wrap-up | 6 min | Q&A and key takeaways |
 
 ### What's Inside
 
 - **5 Demos** — Fully executed with detailed commentary and McKinsey consulting talking points
-- **4 Solved Tasks** — Complete solutions with step-by-step explanations
+- **8 Solved Tasks** — Complete solutions with step-by-step explanations
 
 ### Key Teaching Points
 
