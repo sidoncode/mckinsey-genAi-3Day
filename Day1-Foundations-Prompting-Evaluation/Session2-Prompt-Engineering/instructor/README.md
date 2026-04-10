@@ -21,12 +21,16 @@
 | Task 2 | 10 min | ReAct for PE due diligence |
 | Task 3 | 8 min | McKinsey prompt template library |
 | Task 4 | 12 min | McKinsey Analyst Agent with tools |
+| Task 5 | 10 min | Prompt chaining for M&A due diligence pipeline |
+| Task 6 | 10 min | Self-consistency voting for market sizing |
+| Task 7 | 12 min | Multi-persona debate for strategic decisions |
+| Task 8 | 12 min | Guardrails & output validation for deliverables |
 | Wrap-up | 7 min | Q&A and bridge to Session 3 |
 
 ### What's Inside
 
 - **6 Demos** — Fully executed with detailed commentary
-- **4 Solved Tasks** — Complete solutions with explanations of design choices
+- **8 Solved Tasks** — Complete solutions with explanations of design choices
 
 ### Key Teaching Points
 

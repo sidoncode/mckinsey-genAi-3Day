@@ -19,8 +19,8 @@ This session dives deep into prompt engineering techniques specifically designed
 
 | Notebook | Description |
 |---|---|
-| `student/Session2_Student_Prompt_Engineering.ipynb` | 6 guided demos + 4 TODO exercises with hints |
-| `instructor/Session2_Instructor_Prompt_Engineering.ipynb` | 6 fully solved demos + 4 exercises with explanations |
+| `student/Session2_Student_Prompt_Engineering.ipynb` | 6 guided demos + 8 TODO exercises with hints |
+| `instructor/Session2_Instructor_Prompt_Engineering.ipynb` | 6 fully solved demos + 8 exercises with explanations |
 
 ## Demos (6)
 
@@ -31,9 +31,13 @@ This session dives deep into prompt engineering techniques specifically designed
 5. **Demo 5:** Multi-turn conversation — insurance engagement planning with context accumulation
 6. **Demo 6:** LangChain prompt templates — structured consulting deliverables with output parsers
 
-## Exercises (4)
+## Exercises (8)
 
 1. **Task 1:** Design system prompts for a McKinsey Industry Research Agent
 2. **Task 2:** Implement ReAct-style prompting for PE due diligence
 3. **Task 3:** Create a reusable McKinsey prompt template library (market sizing, executive briefing, competitive analysis)
 4. **Task 4:** Build a McKinsey Analyst Agent with consulting tools (market database, financial model, benchmarking)
+5. **Task 5:** Prompt chaining for M&A due diligence pipeline (3-stage: extract metrics → strategic fit → recommendation)
+6. **Task 6:** Self-consistency voting for market sizing (run N times, aggregate for robust estimate)
+7. **Task 7:** Multi-persona debate for strategic decisions (Bull vs. Bear analysts + moderator synthesis)
+8. **Task 8:** Guardrails & output validation for client deliverables (LLM-as-judge with auto-retry)
