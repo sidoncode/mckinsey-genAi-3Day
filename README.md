@@ -12,7 +12,7 @@ The curriculum takes participants from LLM fundamentals through LangChain/LangGr
 |-----|-------|----------|-----------|
 | **Day 1** | Foundations, Prompting & Evaluation | 4 sessions (Modules 1-3 + Lab Review) | 5 notebooks (8 tasks in Session 1) |
 | **Day 2** | LangChain, LangGraph & Multi-Agent | 4 sessions (Modules 4-7) | 8 notebooks |
-| **Day 3** | RAG, Deployment, Capstone & Governance | 4 sessions (Modules 9-11) + 2 capstone tracks | 10 notebooks |
+| **Day 3** | RAG, Deployment, Capstone & Governance | 4 sessions (Modules 8-11) + 2 capstone tracks | 10 notebooks |
 
 **Total: 23 Jupyter notebooks** (12 student + 11 instructor), **43 README files**, across **12 sessions** over 3 days.
 
@@ -49,9 +49,9 @@ All examples use **McKinsey consulting scenarios**: client engagement planning, 
 
 | Time | Session | Topic |
 |------|---------|-------|
-| 9:00 – 10:45 | Session 1 | **Module 9:** RAG Deep Dive — embeddings, ChromaDB, chunking, query transformation |
-| 11:00 – 12:45 | Session 2 | **Module 10:** Deployment & Scaling — API design, caching, monitoring, cost tracking |
-| 1:30 – 3:15 | Session 3 | **Parallel Capstone Labs** — Track A: Production RAG Service / Track B: Multi-Agent Orchestration |
+| 9:00 – 10:45 | Session 1 | **Module 8:** RAG Deep Dive — embeddings, ChromaDB, chunking, query transformation |
+| 11:00 – 12:45 | Session 2 | **Module 9:** Deployment & Scaling — API design, caching, monitoring, cost tracking |
+| 1:30 – 3:15 | Session 3 | **Module 10:** Parallel Capstone Labs — Track A: Production RAG Service / Track B: Multi-Agent Orchestration |
 | 3:30 – 5:00 | Session 4 | **Module 11:** Cross-Track Debrief, Governance & Closing Reflection |
 
 ---
